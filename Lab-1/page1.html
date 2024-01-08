@@ -1,0 +1,281 @@
+<html>
+<head>
+	<title> Sample Page </title>
+</head>
+<body>
+	<i><b><u> Different Heading sizes </u></b></i>
+	<h1>Heading 1</h1>
+	<h2>Heading 2</h2>
+	<h3>Heading 3</h3>
+	<h4>Heading 4</h4>
+	<h5>Heading 5</h5>
+	<h6>Heading 6</h6>
+
+	<p>
+		<i><b><u> Demonstration of Paragraph and Break</u></b></i>
+		<br>
+		<br>
+		This is a paragraph.Now it will break.
+		<br>
+		Machine learning <strong>(ML)</strong> is the scientific study of algorithms and statistical models that computer systems use to perform a specific task without using explicit instructions, relying on patterns and inference instead. It is seen as a subset of artificial intelligence.Usage of break next.
+		<br>
+		Start of next line.
+		<br>
+		<br>
+		<i><b><u> Text Formatting(Bold,Italic,Underline,Subscripts) </u></b></i>
+		<br>
+		<br>
+		<b>Bold Text</b>
+		<br>
+		<i>Italic Text</i>
+		<br>
+		<u> Underlined Text </u>
+		<br>
+		Below is text using <b> subscripts </b>
+		<br>
+		H<sub>2</sub>O
+		<br>
+		<br>
+
+		<i><b><u> Preformatted Text </u></b></i>
+		<pre>
+	    This text is in a preformatted manner.
+	    </pre>
+
+	</p>
+
+	<p>
+		Marking deleted and inserted text done below.
+		<br>
+		ML has a lot of applications and <del>algorithms</del>
+		<ins>mathematics</ins> too.
+
+	</p>
+    <i><b><u> Text Direction </u></b></i>
+	<p style="direction: rtl">
+		This demonstrates the text direction.
+		<br>
+	</p>
+
+	<p>
+		<i><b><u> Usage of div </u></b></i>
+		<div id = "section 1" style="background-color: lightblue">
+			<h4>More Info</h4>
+			Machine learning is closely related to computational statistics, which focuses on making predictions using computers.
+		</div>
+		<br>
+
+		<i><b><u> Usage of span </u></b></i>
+		<br>
+
+		The study of <span style="color:orange">mathematical optimization </span>delivers methods, theory and application domains to the field of machine learning. Data mining is a field of study within machine learning, and focuses on exploratory data analysis through unsupervised learning.
+	</p>
+    
+    <i><b><u> Usage of Hyperlinks</u></b></i>
+	<p>
+
+		<nav>
+			<a href="page2.html">Hyperlink to Page 2</a>
+			<br>
+			<br>
+			<a href="page3.html"><img height="200" width="300" src="/home/student/Downloads/one.jpg" alt = "ubuntu"></a>
+			<br>
+			<br>
+			<a href="page1.html" target="blank">Press this to open in new window</a>
+			<br>
+			<br>
+			<a href="#section1">This goes to a section of same page</a>
+		</nav>
+	</p>
+
+	<i><b><u> Inserting Image with Resolution 250x350 and changing to 150x250 </u></b></i>
+	<p>
+		<img height ="250" width = "350" src ="/home/student/Downloads/sample.jpg">
+		<br>
+		<br>
+		<img height ="150" width = "250" src ="/home/student/Downloads/sample.jpg">
+
+		<br>
+		<i><b><u> Demonstration of an Image Map(Click on Sun) </u></b></i>
+		<br>
+		<br>
+
+		<img src="/home/student/Downloads/one.jpg" height="250" width="350" usemap="#planetmap">
+
+	<map name="planetmap">
+    <area shape="rect" coords="0,0,30,250" alt="Sun" href="/home/student/Downloads/sun.jpg">
+    </map>
+	</p>
+
+	<i><b><u> Creating a Table </u></b></i>
+	<p>
+		<table style="width: 75% " border="1px black">
+		<caption style="background-color: green">Subjects</caption>
+		<tr>
+			<th>Name</th>
+			<th>Credits</th>
+			<th>No. of working hours</th>
+		</tr>
+
+		<tr>
+			<th>IST</th>
+			<th>2</th>
+			<th>4 hrs</th>
+		</tr>
+
+		<tr>
+			<th>DL</th>
+			<th rowspan="2">4 + 1</th>
+			<th rowspan="2">7 hrs</th>
+		</tr>
+
+		<tr>
+			<th>BDA</th>
+			
+		</tr>
+
+	</table>
+    </p>
+
+    <i><b><u> Creating Unordered,Ordered and Definition Lists </u></b></i>
+    <p>
+    	Unordered list:
+			<ul>
+				<li>Sunday</li>
+				<li>Monday</li>
+				<li>Tuesday</li>
+			</ul>
+
+		Ordered list:
+			<ol>
+				<li>Wednesday</li>
+				<li>Thursday</li>
+				<li>Friday</li>
+			</ol>
+
+		List definition:
+			<dl>
+				<dt>Def 1</dt>
+				<dd>This is the first definiton</dd>	
+				<dt>Def 2</dt>
+				<dd>This is the second definition</dd>
+			</dl>
+	</p>
+
+	<i><b><u> Creating a Form</u></b></i>
+	<p>
+		<form action="page1.html" method="get">
+	<pre>
+		Enter name
+		<input type="text" name="Name">
+		<br>
+
+		Enter password
+		<input type="password" name="pwd">
+		<br>
+
+		Enter Year of Joining
+		2018<input type="radio" name="2020">
+		2019<input type="radio" name="2021">
+
+		Your Hobbies
+		Sports	<input type="checkbox" name="Sports">
+		Movies		<input type="checkbox" name="Movies">
+		Photography	<input type="checkbox" name="Photography">
+
+		Select your college
+		<select name="dropdown">
+			<option value="mit">MIT</option>
+			<option value="kmc">KMC</option>
+			<option value="none" selected>None</option>
+		</select>
+
+		Enter additional information
+		<textarea rows="5" cols="30">
+
+		</textarea>
+
+		<button type="submit" value="submit">SUBMIT</button>
+		<button type="reset" value="reset">RESET</button>
+
+	</pre>
+</form>
+<i><b><u> Links for External,Embedded and Inline</u></b></i>
+<p>
+	<nav>
+    <a href="page4.html">External Style CSS</a>
+    <br>
+    <a href="page5.html">Embedded Style CSS</a>
+    <br>
+    <a href="page6.html">Inline Style CSS</a>
+</nav>
+</p>
+<i><b><u>Canvas</u></b></i>
+<p>
+    Create an empty canvas
+    <br>
+    <canvas id="emptyCanvas" width="300" height="300"></canvas>
+    <br><br>
+
+    Draw a line
+    <br><br>
+    <canvas id="lineCanvas" width="200" height="100"></canvas>
+    <br><br>
+
+    Draw a Circle
+    <br><br>
+    <canvas id="circleCanvas" width="200" height="200"></canvas>
+    <br>
+
+    Draw a rectangle
+    <br><br>
+    <canvas id="rectangleCanvas" width="200" height="100"></canvas>
+    <br><br>
+
+    Add content to other canvases
+    <br><br>
+    <canvas id="myCanvas" width="200" height="100"></canvas>
+    <br><br>
+
+    <canvas id="myOtherCanvas" width="200" height="100"></canvas>
+    <br><br>
+
+		<script type="text/javascript">
+    var c = document.getElementById('lineCanvas');
+    var ctx = c.getContext("2d");
+    ctx.moveTo(0,0);
+    ctx.lineTo(100,100);
+    ctx.stroke();
+
+    var d = document.getElementById('circleCanvas');
+    var dtx = d.getContext("2d");
+    dtx.beginPath();
+    dtx.arc(95,50,40,0,2*Math.PI);
+    dtx.stroke();
+
+    var e = document.getElementById("rectangleCanvas");
+    var etx = e.getContext("2d");
+    etx.fillStyle = 'yellow'; // Set the fill color first
+    etx.fillRect(20, 20, 150, 100);
+
+    var f = document.getElementById("myCanvas");
+    var ftx = f.getContext("2d");
+    var grd = ftx.createLinearGradient(0, 0, 200, 0);
+    grd.addColorStop(1, "yellow");
+    grd.addColorStop(0, "orange");
+    ftx.fillStyle = grd;
+    ftx.fillRect(10, 10, 150, 80); 
+
+    var g = document.getElementById("myOtherCanvas");
+    var gtx = g.getContext("2d");
+    var grd2 = gtx.createRadialGradient(75, 50, 5, 90, 60, 100);
+    grd2.addColorStop(0, "blue");
+    grd2.addColorStop(1, "cyan");
+    gtx.fillStyle = grd2;
+    gtx.fillRect(50, 10, 150, 80); 
+</script>
+</p>
+
+
+</body>
+</html>
