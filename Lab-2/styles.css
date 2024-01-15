@@ -1,0 +1,41 @@
+body {
+    background-color: navajowhite;
+    font-family: 'Ariel', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Ariel';
+}
+
+form {
+    text-align: center;
+    margin: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 200px;
+    padding: 10px;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+input[type="button"],
+input[type="reset"] {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover,
+input[type="reset"]:hover {
+    background-color: black;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title> Get Element Position </title>
+<style>
+	body{
+		margin: 0;
+		padding: 0;
+	}
+
+	#targetElement {
+		width: 400px;
+		height: 600px;
+		background-color: black;
+		position: relative;
+		left: 540px;
+		right: 100px;
+	}
+
+	#positionInfo{
+		margin-top: 20px;
+	}
+</style>
+<link rel ='stylesheet' href = 'styles.css'>
+</head>
+<body>
+	<h1><b><u> Displays a rectangle and states its relative position.</u></b></h1>
+</body>
+
+<div id = "targetElement"></div>
+<div id = "positionInfo"></div>
+
+<script>
+	function getElementPosition(){
+		var targetElement = document.getElementById('targetElement');
+		var positionInfo = targetElement.getBoundingClientRect();
+
+		var positionInfoElement = document.getElementById('positionInfo');
+		positionInfoElement.innerHTML = 'Element Position - Left: ' + positionInfo.left +
+            ', Top: ' + positionInfo.top +
+            ', Right: ' + positionInfo.right +
+            ', Bottom: ' + positionInfo.bottom;
+    }
+
+    window.onload = getElementPosition;
+</script>
+
+</body>
+</html>
